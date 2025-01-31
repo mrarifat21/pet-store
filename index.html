@@ -35,7 +35,7 @@
               clifford: "#da373d",
               primary: "#fffff",
               "secondary-color": "#FFF9F4",
-              accent: "#ffdc26",
+              "accent-color": "#ffdc26",
               "text-color": "#111111",
               "card-bg": "#F9DF8A",
             },
@@ -51,62 +51,69 @@
   <body class="font-sora text-text-color">
     <header class="">
       <!-- navbar -->
-      <div class="navbar container mx-auto bg-secondary">
-        <div class="navbar-start">
-          <!-- <div class="dropdown">
-                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h8m-8 6h16" />
-                    </svg>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <a>Parent</a>
-                      <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                      </ul>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div> -->
-          <span class="flex items-center gap-2"
-            ><img src="assets/logo-header.png" alt="" />
-            <span class="font-sora text-2xl"
-              >Browse<span class="text-[#FFDC26]">4</span>Pets</span
-            ></span
-          >
+       <div class=" bg-secondary-color"> 
+        <div class="navbar container mx-auto ">
+          <div class="navbar-start">
+            <!-- <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div> -->
+            <span class="flex items-center gap-2"
+              ><img src="assets/logo-header.png" alt="" />
+              <span class="font-sora text-2xl hidden lg:block"
+                >Browse<span class="text-[#FFDC26]">4</span>Pets</span
+              ></span
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="text-xl">Find a pet</a></li>
+              <li><a class="text-xl">Breeds</a></li>
+              <li><a class="text-xl">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-3 ">
+            <div class="hidden lg:block">
+              <i class="fa-regular fa-bell text-xl cursor-pointer"></i>
+              <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
+              <a class="btn btn-outline border-accent-color hover:bg-accent-color text-xl"
+             >Login</a
+              >
+              <a class="btn btn-outline border-accent-color hover:bg-accent-color text-xl"
+                >Register</a
+              >
+            </div>
+  
+            <a href=""><i class="fa-solid fa-bars  text-2xl lg:"></i></a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
-            <li><a class="text-xl">Find a pet</a></li>
-            <li><a class="text-xl">Breeds</a></li>
-            <li><a class="text-xl">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end gap-3">
-          <i class="fa-regular fa-bell text-xl cursor-pointer"></i>
-          <i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i>
-          <a class="btn btn-outline border-accent hover:bg-accent text-xl"
-            >Login</a
-          >
-          <a class="btn btn-outline border-accent hover:bg-accent text-xl"
-            >Register</a
-          >
-        </div>
-      </div>
+       </div>
+      
 
       <!-- hero -->
       <div class="mb-20">
@@ -128,7 +135,7 @@
                 <br />
                 your furry friends. Shop now and make tails wag with joy!
               </p>
-              <button class="bg-accent px-8 py-4 rounded-lg">Find a pet</button>
+              <button class="bg-accent-color px-8 py-4 rounded-lg">Find a pet</button>
             </div>
           </div>
         </div>
@@ -150,7 +157,7 @@
               <br />
               your furry friends. Shop now and make tails wag with joy!
             </p>
-            <button class="bg-accent px-8 py-4 rounded-lg">Find a pet</button>
+            <button class="bg-accent-color px-8 py-4 rounded-lg">Find a pet</button>
           </div>
         </div>
       </div> -->
@@ -252,12 +259,12 @@
         <div class="container mx-auto">
           <h2 class="font-adlam text-3xl mb-12">Trending Pet Products</h2>
           <!-- cards -->
-          <div class="flex justify-center gap-4 w-full ">
+          <div class="lg:flex justify-center gap-4 w-full ">
             <!-- Big Card -->
-            <div class="big-card flex bg-[#F9DF8A] rounded-xl pt-14 px-8 w-6/12">
+            <div class="big-card flex bg-[#F9DF8A] rounded-xl pt-14 px-8 lg:w-6/12">
               <div>
                 <h2 class="font-adlam text-3xl">T-Shirt For Dogs</h2>
-                <p class="my-5">
+                <p class="my-5 ">
                   Discover a word of treats, toys, <br />
                   and essentials handpicked for
                 </p>
@@ -431,6 +438,11 @@
           </div>
         </div>
       </section>
+
+      <!-- Low Price -->
+       <section class="low-price">
+        <h2 class="font-adlam text-3xl mb-12">Everyday low Price</h2>
+       </section>
     </main>
     <footer></footer>
   </body>
