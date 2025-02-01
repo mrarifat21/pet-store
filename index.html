@@ -84,7 +84,7 @@
               >
             </div>
 
-            <a href=""><i class="fa-solid fa-bars text-2xl lg:"></i></a>
+            <a href=""><i class="fa-solid fa-bars text-2xl block lg:hidden"></i></a>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
               Discover a world of treats, toys, and essentials handpicked for
               your furry friends. Shop now and make tails wag with joy!
             </p>
-            <button class="bg-accent-color px-8 py-4 rounded-lg">
+            <button class="bg-accent-color px-8 py-4 rounded-lg hover:bg-yellow-500">
               Find a pet
             </button>
           </div>
@@ -226,7 +226,7 @@
                   Discover a word of treats, toys, and essentials handpicked for
                 </p>
                 <button
-                  class="px-8 py-3 md:text-xl text-base bg-white rounded-lg hover:bg-[#7298ae]"
+                  class="px-8 py-3 md:text-xl text-base bg-white rounded-lg hover:bg-yellow-500"
                 >
                   Shop Now
                 </button>
@@ -400,7 +400,7 @@
       </section>
 
       <!-- Low Price -->
-      <section class="low-price container mx-auto px-4 md:px-0 my-20 mb-[300px]">
+      <section class="low-price container mx-auto px-4 md:px-0 my-20 ">
         <h2 class="font-adlam md:text-3xl text-2xl mb-12">
           Everyday low Price
         </h2>
@@ -441,13 +441,57 @@
           </div>
         </div>
       </section>
+      <!-- New Seceion ==> FAQ -->
+
+      <section class="container mx-auto px-4 md:px-0 mb-[300px] mt-20">
+        <h2 class="font-adlam md:text-3xl text-2xl mb-12">
+         FAQs
+        </h2>
+        <div class="collapse collapse-arrow bg-[#ffdc2680] border-2 border-accent-color mb-1">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-2xl font-medium font-adlam ">What is your return policy?
+          </div>
+          <div class="collapse-content">
+            <p>You can return our products within seven days of purchase</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-[#ffdc2680] border-2 border-accent-color mb-1">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-medium font-adlam">How does your delivery system work?</div>
+          <div class="collapse-content">
+            <p>We deliver nationwide using reliable courier services.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-[#ffdc2680] border-2 border-accent-color mb-1">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-medium font-adlam">What are the delivery charges?</div>
+          <div class="collapse-content">
+            <p>Delivery charges depend on your location, typically ranging from ৳60 to ৳150.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-[#ffdc2680] border-2 border-accent-color mb-1">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-medium font-adlam">How long does delivery take?</div>
+          <div class="collapse-content">
+            <p>Our standard delivery time is between 3 to 7 days.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-[#ffdc2680] border-2 border-accent-color">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-2xl font-medium font-adlam"> Do you have physical outlets?</div>
+          <div class="collapse-content">
+            <p>Yes! We have outlets in every division of our country.</p>
+          </div>
+        </div>
+      </section>
+
 
       <!-- news-letter section -->
     </main>
 
     <footer class=" bg-[#ffdc2680] text-base-content p-10 h-[650px] relative">
       <section
-        class="container mx-auto justify-center px-4 md:px-0 flex flex-col lg:flex-row items-center bg-white border-2 absolute left-9 -top-52 "
+        class="container mx-auto justify-center items-center gap-7 px-4 md:px-0 flex flex-col lg:flex-row  bg-white border-2 absolute left-9 -top-52 "
       >
         <div class="mb-8 lg:mb-0">
           <img src="assets/cute-pet-small.png" alt="" />
@@ -460,7 +504,7 @@
           <input
             type="email"
             placeholder="Enter email...."
-            class="my-6 rounded-lg border-[1px] pl-1 py-4 w-96 placeholder:text-[#C4C4C4]"
+            class="my-6 rounded-lg border-[1px] pl-1 py-4 lg:w-96 w-80 placeholder:text-[#C4C4C4]"
           />
           <br />
           <button class="btn bg-accent-color w-32 hover:bg-yellow-500">
