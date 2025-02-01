@@ -46,7 +46,6 @@
             animation: {
               fromleft: "fromleft 1s ease-out",
               fromright: "fromright 1s ease-out",
-              frombottom: "frombottom 1s ease-out",
             },
             keyframes: {
               fromleft: {
@@ -65,15 +64,6 @@
 
                 to: {
                   transform: "translateX(0px)",
-                },
-              },
-              frombottom: {
-                from: {
-                  transform: "translateY(1000%)",
-                },
-
-                to: {
-                  transform: "translateY(0px)",
                 },
               },
             },
@@ -145,7 +135,7 @@
               your furry friends. Shop now and make tails wag with joy!
             </p>
             <button
-              class="bg-accent-color px-8 py-4 rounded-lg hover:bg-yellow-500 animate-frombottom"
+              class="bg-accent-color px-8 py-4 rounded-lg hover:bg-yellow-500 animate-bounce"
             >
               Find a pet
             </button>
@@ -468,7 +458,7 @@
       </section>
 
       <!-- Low Price -->
-      <section class="low-price container mx-auto px-4 md:px-0 my-20">
+      <section class="container mx-auto px-4 md:px-0 my-20">
         <h2 class="font-adlam md:text-3xl text-2xl mb-12">
           Everyday low Price
         </h2>
@@ -479,7 +469,7 @@
           >
             <div>
               <p class="text-xl hidden lg:block">Under Price</p>
-              <h3 class="font-adlam lg:text-2xl text-xl my-3 ">
+              <h3 class="font-adlam lg:text-2xl text-xl my-3">
                 Pet Grooming Mitt
               </h3>
               <p class="mb-4 text-white text-2xl font-adlam hidden lg:block">
@@ -582,13 +572,13 @@
       <section
         class="container mx-auto px-4 md:px-0 absolute left-1/2 -translate-x-1/2 -top-44"
       >
-      <div class="flex flex-col lg:flex-row  justify-center items-center gap-7   bg-white ">
+      <div class="flex flex-col lg:flex-row  justify-center items-center gap-7   bg-white pb-4 ">
         <div class="mb-8 lg:mb-0">
           <img src="assets/cute-pet-small.png" alt="" />
         </div>
         <div class="text-center lg:text-left">
           <h3 class="font-adlam md:text-3xl text-2xl mb-5">Get Awsome News!</h3>
-          <p class="md:text-xl text-base">
+          <p class="md:text-xl text-base py-1 md:py-0">
             Exclusive training tips, ticks, product deals and more.
           </p>
           <input
